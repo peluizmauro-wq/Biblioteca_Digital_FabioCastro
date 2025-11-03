@@ -1,0 +1,11 @@
+# Guia de Contribuição
+
+Este projeto está aberto a contribuições para melhoria e expansão de funcionalidades. Siga estas diretrizes:
+
+1.  **Fork e Branching:** Crie um *fork* do repositório, crie uma *branch* nova (ex.: `feature/nova-funcionalidade` ou `fix/nome-do-bug`).
+2.  **Commits Atômicos e Claros:**
+    * Mantenha cada commit focado em uma única alteração.
+    * Use mensagens claras e descritivas (ex.: `feat(cli): adicionar comando listar por autor`).
+3.  **Qualidade do Código:** Siga o padrão de estilo PEP8 do Python.
+4.  **Testes:** Garanta que todas as funcionalidades existentes e novas operem sem erros (conforme detalhado no `Relatorio_FabioCastro.txt`).
+5.  **Pull Request (PR):** Envie um Pull Request da sua *branch* para a *branch* `main` deste repositório, descrevendo detalhadamente a alteração.

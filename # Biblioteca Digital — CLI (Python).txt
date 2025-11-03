@@ -1,0 +1,25 @@
+# Biblioteca Digital — CLI (Python)
+
+Este projeto implementa um sistema de gerenciamento de biblioteca digital baseado em interface de linha de comando (CLI) em Python, conforme o escopo da HP2 de Programação para Ciência de Dados.
+
+### Funcionalidades Implementadas
+
+O sistema permite a gestão eficiente de documentos digitais com persistência simples em `metadata.json`.
+
+| Comando | Descrição |
+| :--- | :--- |
+| `python sistema_biblioteca.py init` | Cria o diretório `acervo/` e o catálogo `metadata.json`. |
+| `python sistema_biblioteca.py adicionar <caminho> "<titulo>" <ano>` | Copia um arquivo para o `acervo/` e registra seus metadados. |
+| `python sistema_biblioteca.py listar-tipo` | Lista o acervo agrupado por extensão de arquivo (tipo). |
+| `python sistema_biblioteca.py listar-ano` | Lista o acervo agrupado por ano de publicação. |
+| `python sistema_biblioteca.py renomear <nome_no_acervo> <novo_nome.ext>` | Renomeia o arquivo no disco e atualiza o catálogo. |
+| `python sistema_biblioteca.py remover <nome_no_acervo>` | Remove o arquivo do disco e do catálogo. |
+
+### Estrutura do Projeto
+
+- `acervo/`: Diretório que armazena fisicamente os arquivos digitais (PDF, ePUB, DOCX, etc.).
+- `metadata.json`: Arquivo de catálogo em formato JSON para persistência dos metadados.
+- `sistema_biblioteca.py`: O código-fonte principal da aplicação.
+- `Relatorio_FabioCastro.txt`: Relatório de testes e feedback.
+- `Relatorio_FabioCastro.pdf`: Relatório técnico/sumário.
+- `CONTRIBUTING.md`: Guia para colaboração (Pull Requests).

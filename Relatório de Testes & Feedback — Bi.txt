@@ -1,0 +1,26 @@
+Relatório de Testes & Feedback — Biblioteca Digital (Python)
+
+Este relatório detalha os testes manuais realizados e o feedback incorporado ao projeto.
+
+***
+
+## Testes Manuais
+
+Todos os comandos foram testados com sucesso na linha de comando:
+
+- **init**: Criou a pasta `acervo/` e o arquivo `metadata.json`.
+- **adicionar**: Copiou um arquivo de teste para `acervo/` e registrou os metadados corretamente no JSON.
+- **listar-tipo / listar-ano**: Os documentos registrados foram agrupados corretamente.
+- **renomear**: Alterou o nome físico do arquivo e atualizou o caminho no `metadata.json`.
+- **remover**: Apagou o arquivo do disco e removeu o registro do catálogo.
+
+## Feedback Recebido (Bibliotecários)
+
+1.  **Feedback**: Necessidade de incluir o formato `.docx` como tipo de arquivo suportado.
+    * **Ação Implementada**: O conjunto `TIPOS_SUPORTADOS` no `sistema_biblioteca.py` foi atualizado para incluir `".docx"`.
+2.  **Feedback**: As mensagens de erro para operações de arquivo não localizadas ou extensões não suportadas deveriam ser mais claras.
+    * **Ação Implementada**: Mensagens como "ERRO: arquivo de origem não encontrado. (Mensagem de erro clara)" foram adicionadas ao código.
+
+## Reprodução
+
+Para reproduzir os testes, siga os comandos listados no `README.md`.
